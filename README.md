@@ -43,7 +43,7 @@ Lista 5-7 funcionalidades clave:
 
 ### Arquitectura Inicial
 
-**Elegí**: Monolito 
+**Elegí**: N-capas
 
 **¿Por qué?**: Facilitara en un futuro el tener tanto código y roles diferentes de nuestro software, además es mucho mejor que tener todo revuelto como en un monolito. En palabras sencillas evitaremos tener un revuelto que pierde sentido entre más roles haya y tendremos mejor un sistema ordenado y fácil de escalar.
 
