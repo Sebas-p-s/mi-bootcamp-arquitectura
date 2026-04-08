@@ -1,0 +1,17 @@
+{
+  "name": "week-06",
+  "version": "1.0.0",
+  "description": "Rechum — Arquitectura Hexagonal",
+  "main": "src/main.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/main.js",
+    "test": "node --test tests/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "Sebastian Pachon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1"
+  }
+}
