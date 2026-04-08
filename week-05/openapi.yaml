@@ -1,0 +1,70 @@
+openapi: 3.0.0
+info:
+  title: API Rechum
+  version: 1.0.0
+  description: API para gestión de empleados
+
+servers:
+  - url: /
+
+paths:
+  /api/v1/empleados:
+    get:
+      summary: Obtener todos los empleados
+      responses:
+        '200':
+          description: Lista de empleados
+
+    post:
+      summary: Crear un empleado
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                nombre:
+                  type: string
+                cargo:
+                  type: string
+      responses:
+        '201':
+          description: Empleado creado
+
+  /api/v1/empleados/{id}:
+    get:
+      summary: Obtener empleado por ID
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Empleado encontrado
+
+    put:
+      summary: Actualizar empleado
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Empleado actualizado
+
+    delete:
+      summary: Eliminar empleado
+      parameters:
+        - in: path
+          name: id
+          required: true
+          schema:
+            type: string
+      responses:
+        '204':
+          description: Eliminado
