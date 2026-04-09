@@ -1,0 +1,17 @@
+{
+  "name": "rechum-cloud",
+  "version": "1.0.0",
+  "description": "API REST de Recursos Humanos — Rechum Cloud Native",
+  "main": "src/server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/server.js",
+    "migrate": "node src/db/migrations.js"
+  },
+  "author": "Sebastian Pachon",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.2.1",
+    "pg": "^8.13.3"
+  }
+}

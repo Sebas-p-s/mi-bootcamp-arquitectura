@@ -1,0 +1,21 @@
+services:
+  api:
+    volumes: []
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+    deploy:
+      replicas: 2
+      restart_policy:
+        condition: on-failure
+        delay: 5s
+        max_attempts: 3
+
+  pgadmin:
+    profiles:
+      - tools
+
+  db:
+    deploy:
+      restart_policy:
+        condition: on-failure
